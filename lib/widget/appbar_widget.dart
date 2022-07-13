@@ -74,11 +74,6 @@ class Appbar extends StatelessWidget {
         Visibility(
             visible: visibility!,
             child: Text('Question ${snapshotIndex! + 1}')),
-        Image.asset(
-          'assets/images/mind.png',
-          scale: 1,
-          height: MediaQuery.of(context).size.height / 3,
-        )
       ],
     );
   }

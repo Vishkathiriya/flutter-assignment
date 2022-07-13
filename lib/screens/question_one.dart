@@ -53,6 +53,11 @@ class _QuestionOneState extends State<QuestionOne> {
               children: [
                 progressTimerWidget(
                     indexSnapshot.data!, context.read<Questions>().items),
+                Image.asset(
+                  'assets/images/mind.png',
+                  scale: 1,
+                  height: MediaQuery.of(context).size.height / 3,
+                ),
                 questionListWidget(context.read<Questions>().items),
               ],
             );
